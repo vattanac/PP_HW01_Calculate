@@ -84,7 +84,8 @@ class ViewController: UIViewController {
                 
                 //lblMid.text = "
                 
-            }else if sender.tag == 14{//+
+            }
+            else if sender.tag == 14{//+
                 
                 
                 //lblMid.text = "+"
@@ -106,13 +107,18 @@ class ViewController: UIViewController {
                 }
                  lblMid.text = "0"
                 
-            }else if sender.tag == 16 {
+            }
+            else if sender.tag == 16 {
                 print("Hello???")
                 
                 preNum = preNum * (-1)
                  print("WOW\(preNum)")
                 lblMid.text = String(preNum)
                 
+            }
+            else if sender.tag  == 17  {
+                 toplbl.text =  lblMid.text! + "%"
+                 lblMid.text = "0"
             }
             
             operation = sender.tag
@@ -138,9 +144,16 @@ class ViewController: UIViewController {
                 print("MYRESUL:\(myresult)")
                 
                 
+            }else if operation  == 17  {
+                print("heeee")
+                print("\(preNum) \\\\ \(tem1)")
+                 myresult = preNum .truncatingRemainder(dividingBy: tem1)
+                 toplbl.text = String(myresult)
+                 print("%%\(myresult)")
+                
             }
-            tempo = myresult
-            print("%%\(tempo)")
+         //  tempo = myresult
+           // print("%%\(tempo)")
            
         }else if sender.tag == 10{
             toplbl.text = ""

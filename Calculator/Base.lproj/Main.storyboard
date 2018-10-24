@@ -60,7 +60,7 @@
                                             <action selector="btnOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8k-Vk-XK6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfO-wK-nwz" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
+                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfO-wK-nwz" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                         <rect key="frame" x="165" y="157" width="70" height="70"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
