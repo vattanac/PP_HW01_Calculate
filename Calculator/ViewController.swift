@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     var operation = 0
     var test = ""
     var tem1:Double = 0
+    var x:Double = 0
+      var tem2:Double = 0
     var  myresult:Double = 0
      var plusMinusIsClickedOne:Bool = false
     var isClicked:Bool = false
@@ -31,6 +33,7 @@ class ViewController: UIViewController {
             
             
              print("PRe\(preNum)")
+             tem2  = preNum
              lblMid.text = test
              print("Test:"+test)
              operatorIsClick = false
@@ -96,16 +99,33 @@ class ViewController: UIViewController {
                     
                     
                     isClicked = true
+                    lblMid.text = "0"
                     
                 }
                 else if isClicked == true {
-                    print(tem1)
-                    myresult = Total(val1: preNum, val2: tem1, Operation: 14)
+                    
+                    print("SECON TEM1: \(tem1)")
+                    print("SECOND TME2: \(tem2)")
+                    
+                    myresult = Total(val1: tem1, val2: tem2, Operation: 14) + x
                     print("MYRESUL1: \(myresult)")
+                    toplbl.text = String(myresult) + "+"
                    
+                    //tem1 = myresult
+                    lblMid.text = "0"
+                   
+                    tem2 = preNum
+                    tem1 = myresult
+                    
+                     print("MYRESUL?: \(tem2)")
+                     print("MYRESUL1: \(tem1)")
                     // toplbl.text = String(tempo) + "+"
+                    isClicked = true
                 }
-                 lblMid.text = "0"
+                //
+                x = tem1
+                
+                print("NEW TEM1: \(tem1)")
                 
             }
             else if sender.tag == 16 {
